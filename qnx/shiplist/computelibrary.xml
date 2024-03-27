@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shiplist>
+    <id>com.qnx.${baselineId}.osr.computelibrary</id>
+    <version>v24.01</version>
+    <name>computelibrary</name>
+    <category>OSR</category>
+    <property key="product">Prebuilt Open Source Packages</property>
+    <packageType>component</packageType>
+    <description>A set of machine learning functions optimized for both Arm CPUs and GPUs using SIMD technologies</description>
+    <asset dest="${targetfolder}/usr/include/arm_compute"/>
+    <asset dest="${targetfolder}/usr/include/cl"/>
+    <asset dest="${targetfolder}/usr/include/half"/>
+    <asset dest="${targetfolder}/usr/include/libnpy"/>
+    <asset dest="${targetfolder}/usr/include/stb"/>
+    <asset dest="${targetfolder}/usr/include/support"/>
+    <asset dest="${targetfolder}/usr/include/utils"/>
+    <file name="${targetfolder}/[ARCH]/usr/lib/libarm_compute.so"/>
+    <file name="${targetfolder}/[ARCH]/usr/bin/neon_cnn"/>
+    <file name="${targetfolder}/[ARCH]/usr/bin/neon_copy_objects"/>
+    <file name="${targetfolder}/[ARCH]/usr/bin/neon_gemm_qasymm8"/>
+    <file name="${targetfolder}/[ARCH]/usr/bin/neon_permute"/>
+    <file name="${targetfolder}/[ARCH]/usr/bin/neon_scale"/>
+    <file name="${targetfolder}/[ARCH]/usr/bin/neon_sgemm"/>
+</shiplist>
